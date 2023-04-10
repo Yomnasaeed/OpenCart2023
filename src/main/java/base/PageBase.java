@@ -30,6 +30,12 @@ public class PageBase {
     }
 
 
+    public void waitUntilElementIsDisplayed (By element){
+        WebDriverWait wait = new WebDriverWait(driver, 20);
+        wait.until(ExpectedConditions.visibilityOfElementLocated(element));
+    }
+
+
 
 
 }

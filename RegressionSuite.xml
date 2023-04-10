@@ -1,9 +1,10 @@
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
 <suite name="Regression suite for open cart project on Test Environment">
-    <parameter name="browser" value="firefox"></parameter>
+    <parameter name="browser" value="chrome"></parameter>
     <test name="Regression Test" preserve-order="true">
         <classes>
             <class name="tests.RegistrationWithoutErrorsTest" />
+            <class name="tests.RegistrationWithErrorsTest" />
         </classes>
     </test>
 </suite>
