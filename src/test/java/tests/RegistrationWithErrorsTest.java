@@ -1,7 +1,6 @@
 package tests;
 
 import base.TestBase;
-import com.github.javafaker.Faker;
 import dataReaders.loadPropertiesFiles;
 import org.testng.Assert;
 import org.testng.annotations.Test;
@@ -20,7 +19,7 @@ public class RegistrationWithErrorsTest extends TestBase {
     @Test
     public void invalidRegistration () throws InterruptedException {
         homeObject = new HomePage(driver);
-        homeObject.clickOnRegister();
+        homeObject.clickOnRegisterBtn();
         registerObj = new RegistrationPage(driver);
         registerObj.InvalidRegistration(fn, ln, tel, password);
         Assert.assertTrue(driver.findElement(registerObj.emailValidation_error).isDisplayed());

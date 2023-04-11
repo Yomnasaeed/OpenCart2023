@@ -36,7 +36,6 @@ public class RegistrationPage extends PageBase {
     }
 
     public void userLogout() throws InterruptedException {
-        waitUntilElementIsClickable(logout_Btn);
         clickButton(logout_Btn);
     }
 
@@ -49,6 +48,5 @@ public class RegistrationPage extends PageBase {
         typeTextInField(confirmPassword_txt, password);
         clickButton(terms_check);
         clickButton(continue_btn);
-        waitUntilElementIsDisplayed(emailValidation_error);
     }
 }

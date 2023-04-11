@@ -8,7 +8,7 @@ import java.util.Properties;
 public class loadPropertiesFiles {
 
     public static Properties userData = loadProperties(System.getProperty("user.dir")+"\\src\\main\\java\\properties\\userLoginData.properties");
-//    public static Properties URl = loadProperties(System.getProperty("user.dir")+"\\src\\main\\java\\properties\\EnvironmentsURL.properties");
+    public static Properties URl = loadProperties(System.getProperty("user.dir")+"\\src\\main\\java\\properties\\EnvironmentsURL.properties");
 
 
         private static Properties loadProperties(String path)
