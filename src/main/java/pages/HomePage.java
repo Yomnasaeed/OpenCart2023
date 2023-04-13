@@ -14,6 +14,7 @@ public class HomePage extends PageBase {
 
     By myAccount_btn = By.xpath("//span[@class='hidden-xs hidden-sm hidden-md' and contains(text(),'My Account')]");
     By register_btn = By.xpath("//*[contains(@href,'register')]");
+    public By logout_btn = By.xpath("//li/a[text()='Logout']");
 
     public HomePage makeSureYouAreInHomePage(){
         Assert.assertEquals("Locator of the header Your Store ","Your Store");
@@ -23,6 +24,11 @@ public class HomePage extends PageBase {
         clickButton(myAccount_btn);
         clickButton(register_btn);
         return new RegistrationPage(driver);
+    }
+
+    public void userLogout() throws InterruptedException {
+        clickButton(myAccount_btn);
+        clickButton(logout_btn);
     }
 
 

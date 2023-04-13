@@ -31,7 +31,7 @@ public class TestBase {
         options.setExperimentalOption("prefs", chromePrefs);
         options.setCapability(CapabilityType.ACCEPT_INSECURE_CERTS, true);
         options.addArguments("--start-maximized");
-        options.addArguments("--incognito");
+//        options.addArguments("--incognito");
         return options;
     }
     @BeforeClass

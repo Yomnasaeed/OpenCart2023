@@ -28,11 +28,11 @@ public class RegistrationWithoutErrorsTest extends TestBase {
     @Description("The user should be able to login successfully")
     public void RegistrationWithoutErrors() throws InterruptedException {
         homeObject = new HomePage(driver);
-        homeObject.clickOnRegister();
+        homeObject.clickOnRegisterBtn();
         registerObj = new RegistrationPage(driver);
         registerObj.validRegistration(fn, ln, email, tel, password);
         Assert.assertTrue(driver.findElement(registerObj.congrats_Message).getText().contains("Your"));
-        Assert.assertTrue(driver.findElement(registerObj.logout_Btn).isDisplayed());
+//
 
     }
 
@@ -41,6 +41,8 @@ public class RegistrationWithoutErrorsTest extends TestBase {
     @Description("The user should be able to logout")
     public void logout() throws InterruptedException {
         registerObj = new RegistrationPage(driver);
-        registerObj.userLogout();
+        registerObj.openMyAccountMenu();
+        Assert.assertTrue(driver.findElement(homeObject.logout_btn).isDisplayed());
+        registerObj.clickOnLogout();
     }
 }
