@@ -1,42 +1,48 @@
 package tests;
 
 import base.TestBase;
-import com.github.javafaker.Faker;
-import dataReaders.loadPropertiesFiles;
-import io.qameta.allure.Description;
-import io.qameta.allure.Severity;
-import io.qameta.allure.SeverityLevel;
-
-import org.testng.Assert;
-import org.testng.annotations.Test;
 import pages.HomePage;
 import pages.RegistrationPage;
+import pages.ValidationPage;
+import utilities.LoadProperties;
+
+import org.testng.Assert;
+import org.testng.annotations.BeforeMethod;
+import org.testng.annotations.Test;
+import com.github.javafaker.Faker;
 
 public class RegistrationWithoutErrorsTest extends TestBase {
 
-    HomePage homeObject;
-    RegistrationPage registerObj;
-    String fn = loadPropertiesFiles.userData.getProperty("firstName");
-    String ln = loadPropertiesFiles.userData.getProperty("lastName");
+    private HomePage homeObject;
+    private RegistrationPage registerObj;
+    private ValidationPage validationPageObj;
+
+    String fn = LoadProperties.userData.getProperty("firstName");
+    String ln = LoadProperties.userData.getProperty("lastName");
     Faker fakeData = new Faker();
     String email = fakeData.internet().emailAddress();
-    String tel = loadPropertiesFiles.userData.getProperty("telephone");
-    String password = loadPropertiesFiles.userData.getProperty("password");
+    String tel = LoadProperties.userData.getProperty("telephone");
+    String password = LoadProperties.userData.getProperty("password");
 
-    @Test (priority = 0)
-    public void RegistrationWithoutErrors() throws InterruptedException {
+    @BeforeMethod
+    public void beforeTest() {
         homeObject = new HomePage(driver);
-        homeObject.clickOnRegisterBtn();
         registerObj = new RegistrationPage(driver);
-        registerObj.validRegistration(fn, ln, email, tel, password);
-        Assert.assertTrue(registerObj.getRegistrationSuccessMsg());
+        validationPageObj = new ValidationPage(driver);
     }
 
-    @Test(priority = 1)
-    public void logout() throws InterruptedException {
-        registerObj = new RegistrationPage(driver);
-        registerObj.openMyAccountMenu();
-        Assert.assertTrue(driver.findElement(homeObject.LOGOUT_BTN).isDisplayed());
+    @Test(priority = 0)
+    public void RegistrationWithoutErrors() {
+        homeObject.clickOnRegisterBtn()
+                .validRegistration(fn, ln, email, tel, password);
+
+        Assert.assertTrue(validationPageObj.getRegistrationSuccessMsg(),"Registration message was not displayed");
+    }
+
+    @Test(dependsOnMethods = "RegistrationWithoutErrors")
+    public void logout() {
+        homeObject.clickOnMyAccountButton();
+        Assert.assertTrue(driver.findElement(homeObject.getLogoutBtn()).isDisplayed());
         registerObj.clickOnLogout();
     }
 }

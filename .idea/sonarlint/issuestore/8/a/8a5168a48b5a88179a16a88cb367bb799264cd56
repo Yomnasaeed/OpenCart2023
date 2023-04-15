@@ -1,0 +1,30 @@
+
+h
+java:S1192?"MDefine a constant instead of duplicating this literal "JS is Ready!" 3 times.(¯ÉŽÅúÿÿÿÿ
+q
+java:S11929"[Define a constant instead of duplicating this literal "return document.readyState" 4 times.(úéæ·
+d
+java:S1192:"IDefine a constant instead of duplicating this literal "complete" 4 times.(Âæëêÿÿÿÿÿ
+P
+java:S1141/"5Extract this nested try block into a separate method.(¡»¢üùÿÿÿÿ
+C
+java:S5411'"(Use a primitive boolean expression here.(•Öþ“ûÿÿÿÿ
+C
+java:S5411;"(Use a primitive boolean expression here.(š‹Ñ¿ýÿÿÿÿ
+D
+java:S5411Ï"(Use a primitive boolean expression here.(ù²àñÿÿÿÿÿ
+D
+java:S5411Ó"(Use a primitive boolean expression here.(÷å°Úùÿÿÿÿ
+m
+java:S3776$"RRefactor this method to reduce its Cognitive Complexity from 19 to the 15 allowed.(‡«—’ûÿÿÿÿ
+@
+java:S19059"*Remove this unnecessary cast to "Boolean".(úéæ·
+V	java:S125P"<This block of commented-out lines of code should be removed.(”¶äÿÿÿÿÿ
+F
+java:S1905­"*Remove this unnecessary cast to "Boolean".(³ÃÆàùÿÿÿÿ
+A
+java:S1905À"*Remove this unnecessary cast to "Boolean".(ý¶þ
+C
+java:S1905â"'Remove this unnecessary cast to "long".(·´ð¡øÿÿÿÿ
+u
+java:S2142å"^Either re-interrupt this method or rethrow the "InterruptedException" that can be caught here.(”ý¾

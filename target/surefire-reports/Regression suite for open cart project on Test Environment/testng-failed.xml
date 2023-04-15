@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [Regression suite for open cart project on Test Environment]" guice-stage="DEVELOPMENT" verbose="0">
+  <test thread-count="5" name="Regression Test(failed)" verbose="0">
+    <classes>
+      <class name="tests.RegistrationWithoutErrorsTest">
+        <methods>
+          <include name="startDriver"/>
+          <include name="RegistrationWithoutErrors"/>
+          <include name="beforeTest"/>
+          <include name="closeDriver"/>
+          <include name="screenShotOnFailure"/>
+          <include name="logout"/>
+        </methods>
+      </class> <!-- tests.RegistrationWithoutErrorsTest -->
+      <class name="tests.RegistrationWithErrorsTest">
+        <methods>
+          <include name="invalidRegWithLessThan4Password"/>
+          <include name="startDriver"/>
+          <include name="beforeTest"/>
+          <include name="closeDriver"/>
+          <include name="invalidRegWithNoPassword"/>
+          <include name="screenShotOnFailure"/>
+          <include name="invalidRegWithFirstAndLastName"/>
+        </methods>
+      </class> <!-- tests.RegistrationWithErrorsTest -->
+    </classes>
+  </test> <!-- Regression Test(failed) -->
+</suite> <!-- Failed suite [Regression suite for open cart project on Test Environment] -->

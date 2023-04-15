@@ -1,0 +1,11 @@
+base/PageBase.class
+utilities/Perform.class
+base/TestBase.class
+utilities/Reporter.class
+pages/HomePage.class
+pages/RegistrationPage.class
+pages/ValidationPage.class
+utilities/LoadProperties.class
+utilities/JSWaiter.class
+utilities/Helper.class
+utilities/JSHelpers.class
