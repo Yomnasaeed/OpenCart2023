@@ -19,18 +19,37 @@ public class RegistrationWithErrorsTest extends TestBase {
     String tel = loadPropertiesFiles.userData.getProperty("telephone");
     String invalidPassword = loadPropertiesFiles.userData.getProperty("inValidPassword");
 
-    @Test
-    public void invalidRegistration () throws InterruptedException {
+    @Test(priority = 0)
+    public void invalidRegWithFirstAndLastName () throws InterruptedException {
         homeObject = new HomePage(driver);
         homeObject.clickOnRegisterBtn();
         registerObj = new RegistrationPage(driver);
         registerObj.InvalidRegistrationWithFN_LN(fn, ln);
-        Assert.assertTrue(driver.findElement(registerObj.emailValidation_error).isDisplayed());
-        Assert.assertTrue(driver.findElement(registerObj.telValidation_error).isDisplayed());
-        Assert.assertTrue(driver.findElement(registerObj.passwordValidation_error).isDisplayed());
-        registerObj.InvalidRegWithNoPassword(fn, ln, email, tel);
-        Assert.assertTrue(driver.findElement(registerObj.passwordValidation_error).isDisplayed());
-        registerObj.InvalidRegLessThan4Password(fn,ln,email,tel,invalidPassword);
-        Assert.assertTrue(driver.findElement(registerObj.passwordValidation_error).isDisplayed());
+        registerObj.clickOnContinue();
+        Assert.assertTrue(driver.findElement(registerObj.EMAILVALIDATION_ERROR).isDisplayed());
+        Assert.assertTrue(driver.findElement(registerObj.TELVALIDATION_ERROR).isDisplayed());
+        Assert.assertTrue(driver.findElement(registerObj.PASSWORDVALIDATIO_ERROR).isDisplayed());
+    }
+
+    @Test(priority = 1)
+    public void invalidRegWithNoPassword () throws InterruptedException {
+        homeObject = new HomePage(driver);
+        homeObject.clickOnRegisterBtn();
+        registerObj = new RegistrationPage(driver);
+        registerObj.InvalidRegistrationWithFN_LN(fn, ln);
+        registerObj.InvalidRegWithNoPassword(email, tel);
+        registerObj.clickOnContinue();
+        Assert.assertTrue(driver.findElement(registerObj.PASSWORDVALIDATIO_ERROR).isDisplayed());
+    }
+
+    @Test(priority = 2)
+    public void invalidRegWithLessThan4Password () throws InterruptedException {
+        homeObject = new HomePage(driver);
+        homeObject.clickOnRegisterBtn();
+        registerObj = new RegistrationPage(driver);
+        registerObj.InvalidRegistrationWithFN_LN(fn, ln);
+        registerObj.InvalidRegWithNoPassword(email, tel);
+        registerObj.InvalidRegLessThan4Password(invalidPassword);
+        Assert.assertTrue(driver.findElement(registerObj.PASSWORDVALIDATIO_ERROR).isDisplayed());
     }
 }

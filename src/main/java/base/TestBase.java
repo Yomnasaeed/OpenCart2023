@@ -11,8 +11,10 @@ import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.chrome.ChromeOptions;
 import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.remote.CapabilityType;
+import org.testng.Assert;
 import org.testng.ITestResult;
 import org.testng.annotations.*;
+import pages.RegistrationPage;
 
 import java.io.File;
 import java.io.IOException;
@@ -31,7 +33,7 @@ public class TestBase {
         options.setExperimentalOption("prefs", chromePrefs);
         options.setCapability(CapabilityType.ACCEPT_INSECURE_CERTS, true);
         options.addArguments("--start-maximized");
-//        options.addArguments("--incognito");
+        options.addArguments("--incognito");
         return options;
     }
     @BeforeClass
@@ -49,9 +51,9 @@ public class TestBase {
 
     @AfterClass
     public void closeDriver(){
-    System.out.println();
         driver.quit();
     }
+
 
     @AfterMethod
     public void screenShotOnFailure(ITestResult result) {

@@ -12,26 +12,25 @@ public class HomePage extends PageBase {
         super(driver);
     }
 
-    By myAccount_btn = By.xpath("//span[@class='hidden-xs hidden-sm hidden-md' and contains(text(),'My Account')]");
-    By register_btn = By.xpath("//*[contains(@href,'register')]");
-    public By logout_btn = By.xpath("//li/a[text()='Logout']");
+    By MYACCOUNT_BTN = By.xpath("//span[@class='hidden-xs hidden-sm hidden-md' and contains(text(),'My Account')]");
+    By REGISTER_BTN = By.xpath("//*[contains(@href,'register')]");
+    public By LOGOUT_BTN = By.xpath("//li/a[text()='Logout']");
 
     public HomePage makeSureYouAreInHomePage(){
         Assert.assertEquals("Locator of the header Your Store ","Your Store");
         return this;
     }
     public RegistrationPage clickOnRegisterBtn() {
-        clickButton(myAccount_btn);
-        clickButton(register_btn);
+        clickButton(MYACCOUNT_BTN);
+        clickButton(REGISTER_BTN);
         return new RegistrationPage(driver);
     }
 
-    public void userLogout() throws InterruptedException {
-        clickButton(myAccount_btn);
-        clickButton(logout_btn);
+    public HomePage userLogout() throws InterruptedException {
+        clickButton(MYACCOUNT_BTN);
+        clickButton(LOGOUT_BTN);
+        return new HomePage(driver);
     }
-
-
 };
 
 
