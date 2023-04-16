@@ -1,7 +1,7 @@
 package pages;
 
 import base.PageBase;
-import io.qameta.allure.Step;
+
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 
@@ -10,43 +10,57 @@ public class RegistrationPage extends PageBase {
         super(driver);
     }
 
-    By firstName_txt = By.id("input-firstname");
-    By lastName_txt = By.id("input-lastname");
-    By email_txt = By.id("input-email");
-    By tel_txt = By.id("input-telephone");
-    By password_txt = By.id("input-password");
-    By confirmPassword_txt = By.id("input-confirm");
-    By terms_check = By.name("agree");
-    By continue_btn = By.xpath("//*[contains(@class,'btn btn-primary')]");
-    public By congrats_Message = By.xpath("//*[@id='content']/p[1]");
-    public By logout_Btn = By.xpath("//*[contains(text(),'Logout') and @class='list-group-item']");
-    public By emailValidation_error = By.cssSelector("div.text-danger");
+    private static final By FIRSTNAME_TXT = By.id("input-firstname");
+    private static final By LASTNAME_TXT = By.id("input-lastname");
+    private static final By EMAIL_TXT = By.id("input-email");
+    private static final  By TEL_TXT = By.id("input-telephone");
+    private static final  By PASSWORD_TXT = By.id("input-password");
+    private static final By CONFIRMPASSWORD_TXT = By.id("input-confirm");
+    private static final By TERMS_CHECK = By.name("agree");
+    private static final  By CONTINUE_BTN = By.xpath("//*[contains(@class,'btn btn-primary')]");
+    private static final By LOGOUT_BTN = By.xpath("//li/a[text()='Logout']");
 
-    @Step("Enter firstName: {0}")
-    public void validRegistration (String firstName, String lastName, String email, String telephone,
-                                   String password) throws InterruptedException {
-        typeTextInField(firstName_txt, firstName);
-        typeTextInField(lastName_txt, lastName);
-        typeTextInField(email_txt, email);
-        typeTextInField(tel_txt, telephone);
-        typeTextInField(password_txt, password);
-        typeTextInField(confirmPassword_txt, password);
-        clickButton(terms_check);
-        clickButton(continue_btn);
+    public RegistrationPage validRegistration (String firstName, String lastName, String email, String telephone,
+                                   String password) {
+        typeTextInField(FIRSTNAME_TXT, firstName);
+        typeTextInField(LASTNAME_TXT, lastName);
+        typeTextInField(EMAIL_TXT, email);
+        typeTextInField(TEL_TXT, telephone);
+        typeTextInField(PASSWORD_TXT, password);
+        typeTextInField(CONFIRMPASSWORD_TXT, password);
+        clickButton(TERMS_CHECK);
+        clickButton(CONTINUE_BTN);
+
+        return this;
     }
 
-    public void userLogout() throws InterruptedException {
-        clickButton(logout_Btn);
+    public RegistrationPage clickOnLogout(){
+        clickButton(LOGOUT_BTN);
+        return this;
     }
 
-    public void InvalidRegistration (String firstName, String lastName, String telephone,
-                                   String password) throws InterruptedException {
-        typeTextInField(firstName_txt, firstName);
-        typeTextInField(lastName_txt, lastName);
-        typeTextInField(tel_txt, telephone);
-        typeTextInField(password_txt, password);
-        typeTextInField(confirmPassword_txt, password);
-        clickButton(terms_check);
-        clickButton(continue_btn);
+    public RegistrationPage InvalidRegistrationWithFirstNameLastName(String firstName, String lastName) {
+        typeTextInField(FIRSTNAME_TXT, firstName);
+        typeTextInField(LASTNAME_TXT, lastName);
+        clickButton(TERMS_CHECK);
+        return this;
+    }
+
+    public RegistrationPage InvalidRegWithNoPassword (String email, String telephone) {
+        typeTextInField(EMAIL_TXT, email);
+        typeTextInField(TEL_TXT, telephone);
+        return this;
+    }
+
+    public RegistrationPage InvalidRegLessThan4Password (String invalidPass) {
+        typeTextInField(PASSWORD_TXT, invalidPass);
+        typeTextInField(CONFIRMPASSWORD_TXT, invalidPass);
+        clickButton(CONTINUE_BTN);
+        return this;
+    }
+
+    public ValidationPage clickOnContinue(){
+        clickButton(CONTINUE_BTN);
+        return new ValidationPage(driver);
     }
 }

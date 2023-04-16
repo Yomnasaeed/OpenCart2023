@@ -12,20 +12,34 @@ public class HomePage extends PageBase {
         super(driver);
     }
 
-    By myAccount_btn = By.xpath("//span[@class='hidden-xs hidden-sm hidden-md' and contains(text(),'My Account')]");
-    By register_btn = By.xpath("//*[contains(@href,'register')]");
+   private static final By MY_ACCOUNT_BTN = By.xpath("//span[@class='hidden-xs hidden-sm hidden-md' and contains(text(),'My Account')]");
+    private static final By REGISTER_BTN = By.xpath("//*[contains(@href,'register')]");
+    private static final By LOGOUT_BTN = By.xpath("//li/a[text()='Logout']");
 
     public HomePage makeSureYouAreInHomePage(){
         Assert.assertEquals("Locator of the header Your Store ","Your Store");
         return this;
     }
+
+    public HomePage clickOnMyAccountButton(){
+        clickButton(MY_ACCOUNT_BTN);
+        return this;
+    }
     public RegistrationPage clickOnRegisterBtn() {
-        clickButton(myAccount_btn);
-        clickButton(register_btn);
+        clickButton(MY_ACCOUNT_BTN);
+        clickButton(REGISTER_BTN);
         return new RegistrationPage(driver);
     }
 
+    public HomePage userLogout() {
+        clickButton(MY_ACCOUNT_BTN);
+        clickButton(LOGOUT_BTN);
+        return new HomePage(driver);
+    }
 
-};
+    public By getLogoutBtn(){
+        return LOGOUT_BTN;
+    }
+}
 
 

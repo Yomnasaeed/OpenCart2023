@@ -1,8 +1,8 @@
 package base;
 
-
-import dataReaders.loadPropertiesFiles;
 import io.github.bonigarcia.wdm.WebDriverManager;
+import utilities.LoadProperties;
+
 import org.apache.commons.io.FileUtils;
 import org.openqa.selenium.OutputType;
 import org.openqa.selenium.TakesScreenshot;
@@ -12,8 +12,9 @@ import org.openqa.selenium.chrome.ChromeOptions;
 import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.remote.CapabilityType;
 import org.testng.ITestResult;
-import org.testng.annotations.*;
-
+import org.testng.annotations.AfterClass;
+import org.testng.annotations.AfterMethod;
+import org.testng.annotations.BeforeClass;
 import java.io.File;
 import java.io.IOException;
 import java.util.HashMap;
@@ -21,8 +22,8 @@ import java.util.HashMap;
 public class TestBase {
 
     public static WebDriver driver;
-    static String applicationURL = loadPropertiesFiles.URl.getProperty("URL");
-    static String browserType = loadPropertiesFiles.URl.getProperty("BrowserType");
+    static String applicationURL = LoadProperties.environmentData.getProperty("URL");
+    static String browserType = LoadProperties.environmentData.getProperty("BrowserType");
 
     public static ChromeOptions chromeOption() {
         ChromeOptions options = new ChromeOptions();
@@ -35,7 +36,7 @@ public class TestBase {
         return options;
     }
     @BeforeClass
-    public void startDriver(){
+    public static WebDriver startDriver(){
         if(browserType.equalsIgnoreCase("chrome")){
             WebDriverManager.chromedriver().setup();
             driver = new ChromeDriver(chromeOption());
@@ -44,14 +45,16 @@ public class TestBase {
             driver = new FirefoxDriver();
         }
         driver.navigate().to(applicationURL);
+        return driver;
     }
 
 
     @AfterClass
     public void closeDriver(){
-    System.out.println();
+        driver.manage().deleteAllCookies();
         driver.quit();
     }
+
 
     @AfterMethod
     public void screenShotOnFailure(ITestResult result) {
