@@ -5,6 +5,8 @@
         <classes>
             <class name="tests.RegistrationWithoutErrorsTest" />
             <class name="tests.RegistrationWithErrorsTest" />
+            <class name="tests.ValidLoginTest" />
+
         </classes>
     </test>
 </suite>

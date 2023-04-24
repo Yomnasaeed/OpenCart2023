@@ -15,6 +15,7 @@ public class HomePage extends PageBase {
    private static final By MY_ACCOUNT_BTN = By.xpath("//span[@class='hidden-xs hidden-sm hidden-md' and contains(text(),'My Account')]");
     private static final By REGISTER_BTN = By.xpath("//*[contains(@href,'register')]");
     private static final By LOGOUT_BTN = By.xpath("//li/a[text()='Logout']");
+    private static final By LOGIN_BTN = By.xpath("//*[contains(@href,'login') and text()='Login']");
 
     public HomePage makeSureYouAreInHomePage(){
         Assert.assertEquals("Locator of the header Your Store ","Your Store");
@@ -25,6 +26,12 @@ public class HomePage extends PageBase {
         clickButton(MY_ACCOUNT_BTN);
         return this;
     }
+
+    public HomePage clickOnLoginButton(){
+        clickButton(LOGIN_BTN);
+        return this;
+    }
+
     public RegistrationPage clickOnRegisterBtn() {
         clickButton(MY_ACCOUNT_BTN);
         clickButton(REGISTER_BTN);

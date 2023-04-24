@@ -5,59 +5,17 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="b94629c0-62e8-4f5d-aeb5-9f22589130d4" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/checkstyle-idea.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_slf4j_slf4j_api_1_7_36.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_testng_testng_7_7_1.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_webjars_jquery_3_6_1.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/sonarlint.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/2/6/26e362d3e180a865912fb705ec7380dad20ae9ea" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/2/8/28452417effc57f53daf085775345c6b8636729b" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/8/a/8a5168a48b5a88179a16a88cb367bb799264cd56" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/a/5/a5cc2925ca8258af241be7e5b0381edf30266302" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/b/6/b624f9d60710bb373c6b3a6d39fab84442942762" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/index.pb" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/securityhotspotstore/2/6/26e362d3e180a865912fb705ec7380dad20ae9ea" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/securityhotspotstore/2/8/28452417effc57f53daf085775345c6b8636729b" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/securityhotspotstore/8/a/8a5168a48b5a88179a16a88cb367bb799264cd56" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/securityhotspotstore/a/5/a5cc2925ca8258af241be7e5b0381edf30266302" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/securityhotspotstore/b/6/b624f9d60710bb373c6b3a6d39fab84442942762" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/securityhotspotstore/index.pb" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/utilities/LoadProperties.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/resources/Properties/EnvironmentsURL.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_beust_jcommander_1_78.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_beust_jcommander_1_82.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_slf4j_slf4j_api_2_0_6.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_testng_testng_7_4_0.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_webjars_jquery_3_5_1.xml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/runConfigurations.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_4_14_2023_4_43_PM__Changes_.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_4_14_2023_4_43_PM__Changes_.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/base/PageBase.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/base/PageBase.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/base/TestBase.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/base/TestBase.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/dataReaders/loadPropertiesFiles.java" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/pages/HomePage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pages/HomePage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/pages/RegistrationPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pages/RegistrationPage.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/pages/ValidationPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pages/ValidationPage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/utilities/Helper.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/utilities/Helper.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/utilities/JSHelpers.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/utilities/JSHelpers.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/utilities/JSWaiter.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/utilities/JSWaiter.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/utilities/Perform.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/utilities/Perform.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/utilities/Reporter.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/utilities/Reporter.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/tests/RegistrationWithErrorsTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/tests/RegistrationWithErrorsTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/tests/RegistrationWithoutErrorsTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/tests/RegistrationWithoutErrorsTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/properties/EnvironmentsURL.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/properties/userLoginData.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/Properties/userLoginData.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/base/PageBase.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/base/PageBase.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/base/TestBase.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/base/TestBase.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/dataReaders/loadPropertiesFiles.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/pages/HomePage.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/pages/HomePage.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/pages/RegistrationPage.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/pages/RegistrationPage.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/tests/RegistrationWithErrorsTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/tests/RegistrationWithErrorsTest.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/tests/RegistrationWithoutErrorsTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/tests/RegistrationWithoutErrorsTest.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/tests/ValidLoginTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/tests/ValidLoginTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/resources/Properties/userLoginData.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/Properties/userLoginData.properties" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -91,20 +49,6 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "WebServerToolWindowFactoryState": "false",
-    "last_opened_file_path": "/Users/mohamed.moustafa/Documents/Automation Projects/OpenCart2023/src/main/utilities",
-    "nodejs_package_manager_path": "npm",
-    "project.structure.last.edited": "Project",
-    "project.structure.proportion": "0.15",
-    "project.structure.side.proportion": "0.0",
-    "settings.editor.selected.configurable": "preferences.lookFeel"
-  }
-}]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/src/main/utilities" />
@@ -120,7 +64,17 @@
       <recent name="pages" />
     </key>
   </component>
-  <component name="RunManager" selected="TestNG.RegistrationWithoutErrorsTest (1)">
+  <component name="RunManager" selected="TestNG.C:/Automation Projects/Open Cart 2023/OpenCart2023/RegressionSuite.xml">
+    <configuration name="C:/Automation Projects/Open Cart 2023/OpenCart2023/RegressionSuite.xml" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="OpenCartLatest" />
+      <option name="SUITE_NAME" value="$PROJECT_DIR$/RegressionSuite.xml" />
+      <option name="TEST_OBJECT" value="SUITE" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="RegistrationWithErrorsTest (1)" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="OpenCartLatest" />
       <extension name="coverage">
@@ -138,24 +92,7 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="RegistrationWithErrorsTest" type="TestNG" temporary="true" nameIsGenerated="true">
-      <module name="OpenCart2023" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="tests.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="tests" />
-      <option name="MAIN_CLASS_NAME" value="tests.RegistrationWithErrorsTest" />
-      <option name="TEST_OBJECT" value="CLASS" />
-      <properties />
-      <listeners />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="RegistrationWithoutErrorsTest (1)" type="TestNG" temporary="true" nameIsGenerated="true">
+    <configuration name="ValidLoginTest (1)" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="OpenCartLatest" />
       <extension name="coverage">
         <pattern>
@@ -164,7 +101,7 @@
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="tests" />
-      <option name="MAIN_CLASS_NAME" value="tests.RegistrationWithoutErrorsTest" />
+      <option name="MAIN_CLASS_NAME" value="tests.ValidLoginTest" />
       <option name="TEST_OBJECT" value="CLASS" />
       <properties />
       <listeners />
@@ -172,8 +109,8 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="RegistrationWithoutErrorsTest" type="TestNG" temporary="true" nameIsGenerated="true">
-      <module name="OpenCart2023" />
+    <configuration name="ValidLoginTest" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="OpenCartLatest" />
       <extension name="coverage">
         <pattern>
           <option name="PATTERN" value="tests.*" />
@@ -181,7 +118,7 @@
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="tests" />
-      <option name="MAIN_CLASS_NAME" value="tests.RegistrationWithoutErrorsTest" />
+      <option name="MAIN_CLASS_NAME" value="tests.ValidLoginTest" />
       <option name="TEST_OBJECT" value="CLASS" />
       <properties />
       <listeners />
@@ -189,8 +126,8 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="RegistrationWithoutErrorsTest.RegistrationWithoutErrors" type="TestNG" temporary="true" nameIsGenerated="true">
-      <module name="OpenCart2023" />
+    <configuration name="ValidLoginTest.clickOnLogin" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="OpenCartLatest" />
       <extension name="coverage">
         <pattern>
           <option name="PATTERN" value="tests.*" />
@@ -198,8 +135,8 @@
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="tests" />
-      <option name="MAIN_CLASS_NAME" value="tests.RegistrationWithoutErrorsTest" />
-      <option name="METHOD_NAME" value="RegistrationWithoutErrors" />
+      <option name="MAIN_CLASS_NAME" value="tests.ValidLoginTest" />
+      <option name="METHOD_NAME" value="clickOnLogin" />
       <option name="TEST_OBJECT" value="METHOD" />
       <properties />
       <listeners />
@@ -209,11 +146,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="TestNG.RegistrationWithoutErrorsTest (1)" />
+        <item itemvalue="TestNG.C:/Automation Projects/Open Cart 2023/OpenCart2023/RegressionSuite.xml" />
+        <item itemvalue="TestNG.ValidLoginTest" />
+        <item itemvalue="TestNG.ValidLoginTest.clickOnLogin" />
+        <item itemvalue="TestNG.ValidLoginTest (1)" />
         <item itemvalue="TestNG.RegistrationWithErrorsTest (1)" />
-        <item itemvalue="TestNG.RegistrationWithoutErrorsTest.RegistrationWithoutErrors" />
-        <item itemvalue="TestNG.RegistrationWithoutErrorsTest" />
-        <item itemvalue="TestNG.RegistrationWithErrorsTest" />
       </list>
     </recent_temporary>
   </component>
@@ -242,5 +179,6 @@
         </entry>
       </map>
     </option>
+    <option name="oldMeFiltersMigrated" value="true" />
   </component>
 </project>
