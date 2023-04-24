@@ -52,6 +52,8 @@ public class PageBase {
         elementVisible(locator);
         return driver.findElement(locator).getText();
     }
+
+
     public boolean waitFor(ExpectedCondition<?> expectedCondition, Duration duration) {
         try {
             FluentWait<WebDriver> fluentWait = new FluentWait<>(driver)
