@@ -5,17 +5,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="b94629c0-62e8-4f5d-aeb5-9f22589130d4" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_4_14_2023_4_43_PM__Changes_.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_4_14_2023_4_43_PM__Changes_.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_4_14_2023_4_43_PM_[Changes]/shelved.patch" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_4_14_2023_4_43_PM__Changes_.xml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/base/TestBase.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/base/TestBase.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/pages/HomePage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pages/HomePage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/pages/ValidationPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pages/ValidationPage.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/tests/ValidLoginTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/tests/ValidLoginTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/resources/Properties/userLoginData.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/Properties/userLoginData.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/tests/ValidLoginTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/tests/ValidLoginTest.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -64,7 +58,7 @@
       <recent name="pages" />
     </key>
   </component>
-  <component name="RunManager" selected="TestNG.C:/Automation Projects/Open Cart 2023/OpenCart2023/RegressionSuite.xml">
+  <component name="RunManager" selected="TestNG.ValidLoginTest">
     <configuration name="C:/Automation Projects/Open Cart 2023/OpenCart2023/RegressionSuite.xml" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="OpenCartLatest" />
       <option name="SUITE_NAME" value="$PROJECT_DIR$/RegressionSuite.xml" />
@@ -146,9 +140,9 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="TestNG.C:/Automation Projects/Open Cart 2023/OpenCart2023/RegressionSuite.xml" />
         <item itemvalue="TestNG.ValidLoginTest" />
         <item itemvalue="TestNG.ValidLoginTest.clickOnLogin" />
+        <item itemvalue="TestNG.C:/Automation Projects/Open Cart 2023/OpenCart2023/RegressionSuite.xml" />
         <item itemvalue="TestNG.ValidLoginTest (1)" />
         <item itemvalue="TestNG.RegistrationWithErrorsTest (1)" />
       </list>
