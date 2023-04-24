@@ -15,6 +15,7 @@ public class ValidationPage extends PageBase {
     private static final By TEL_VALIDATION_ERROR = By.xpath("//*[contains(text(),'Telephone must be')]");
     private static final By PASSWORD_VALIDATION_ERROR = By.xpath("//*[contains(text(),'Password must be between 4 and 20 characters!')]");
     private static final By MYACCOUNT_HEADER = By.id("content");
+    private static final By INVALIDLOGIN_ERROR = By.className("alert-danger");
 
     public boolean getRegistrationSuccessMsg() {
         return elementVisible(REGISTRATION_SUCCESS_MSG);
@@ -35,6 +36,10 @@ public class ValidationPage extends PageBase {
 
     public boolean isMyAccountHeaderVisible() {
         return elementVisible(MYACCOUNT_HEADER);
+    }
+
+    public String getInvalidLoginErrorMessageText (){
+        return getElementText(INVALIDLOGIN_ERROR);
     }
 
 }

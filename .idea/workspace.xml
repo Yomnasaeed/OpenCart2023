@@ -5,11 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="b94629c0-62e8-4f5d-aeb5-9f22589130d4" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_4_14_2023_4_43_PM_[Changes]/shelved.patch" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_4_14_2023_4_43_PM__Changes_.xml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/tests/ValidLoginTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/tests/ValidLoginTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/tests/ValidLoginTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/tests/ValidLoginTest.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -58,7 +54,7 @@
       <recent name="pages" />
     </key>
   </component>
-  <component name="RunManager" selected="TestNG.ValidLoginTest">
+  <component name="RunManager" selected="TestNG.InvalidLoginTest (1)">
     <configuration name="C:/Automation Projects/Open Cart 2023/OpenCart2023/RegressionSuite.xml" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="OpenCartLatest" />
       <option name="SUITE_NAME" value="$PROJECT_DIR$/RegressionSuite.xml" />
@@ -69,7 +65,7 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="RegistrationWithErrorsTest (1)" type="TestNG" temporary="true" nameIsGenerated="true">
+    <configuration name="InvalidLoginTest (1)" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="OpenCartLatest" />
       <extension name="coverage">
         <pattern>
@@ -78,7 +74,7 @@
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="tests" />
-      <option name="MAIN_CLASS_NAME" value="tests.RegistrationWithErrorsTest" />
+      <option name="MAIN_CLASS_NAME" value="tests.InvalidLoginTest" />
       <option name="TEST_OBJECT" value="CLASS" />
       <properties />
       <listeners />
@@ -86,7 +82,7 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="ValidLoginTest (1)" type="TestNG" temporary="true" nameIsGenerated="true">
+    <configuration name="InvalidLoginTest" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="OpenCartLatest" />
       <extension name="coverage">
         <pattern>
@@ -95,7 +91,7 @@
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="tests" />
-      <option name="MAIN_CLASS_NAME" value="tests.ValidLoginTest" />
+      <option name="MAIN_CLASS_NAME" value="tests.InvalidLoginTest" />
       <option name="TEST_OBJECT" value="CLASS" />
       <properties />
       <listeners />
@@ -140,11 +136,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="TestNG.InvalidLoginTest (1)" />
+        <item itemvalue="TestNG.InvalidLoginTest" />
+        <item itemvalue="TestNG.C:/Automation Projects/Open Cart 2023/OpenCart2023/RegressionSuite.xml" />
         <item itemvalue="TestNG.ValidLoginTest" />
         <item itemvalue="TestNG.ValidLoginTest.clickOnLogin" />
-        <item itemvalue="TestNG.C:/Automation Projects/Open Cart 2023/OpenCart2023/RegressionSuite.xml" />
-        <item itemvalue="TestNG.ValidLoginTest (1)" />
-        <item itemvalue="TestNG.RegistrationWithErrorsTest (1)" />
       </list>
     </recent_temporary>
   </component>
