@@ -32,7 +32,7 @@ public class ValidLoginTest extends TestBase {
                 .clickOnLoginButton();
     }
 
-    @Test(priority = 1)
+    @Test(priority = 1, dependsOnMethods = ("clickOnLogin"))
     public void userValidLogin(){
         loginObj.validUserLogin(validEmail,validPassword);
         Assert.assertTrue(validationPageObj.isMyAccountHeaderVisible(),"My Account header was not displayed");
