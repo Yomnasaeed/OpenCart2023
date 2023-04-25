@@ -1,5 +1,7 @@
 package base;
 
+import pages.HomePage;
+import pages.LoginPage;
 import utilities.LoadProperties;
 import utilities.Reporter;
 
@@ -39,6 +41,7 @@ public class PageBase {
         driver.findElement(txtField).sendKeys(txtValue);
         System.out.println("Inserted [ " + txtValue + " ] successfully");
     }
+
 
     public boolean waitUntilElementIsClickable(By element) {
         return waitFor(ExpectedConditions.elementToBeClickable(element), Duration.ofSeconds(15));

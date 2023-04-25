@@ -24,7 +24,7 @@ public class LoginPage extends PageBase {
         typeTextInField(EMAIL_TXT, InvalidEmail);
         typeTextInField(PASSWORD_TXT, InvalidPassword);
         clickButton(LOGIN_Button);
-        return new LoginPage(driver);
+        return this;
     }
 
 }
