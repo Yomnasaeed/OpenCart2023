@@ -20,4 +20,11 @@ public class LoginPage extends PageBase {
        return new MyAccountPage(driver);
    }
 
+    public LoginPage InvalidUserLogin (String InvalidEmail, String InvalidPassword){
+        typeTextInField(EMAIL_TXT, InvalidEmail);
+        typeTextInField(PASSWORD_TXT, InvalidPassword);
+        clickButton(LOGIN_Button);
+        return this;
+    }
+
 }

@@ -16,6 +16,11 @@ public class HomePage extends PageBase {
     private static final By REGISTER_BTN = By.xpath("//*[contains(@href,'register')]");
     private static final By LOGOUT_BTN = By.xpath("//li/a[text()='Logout']");
     private static final By LOGIN_BTN = By.xpath("//*[contains(@href,'login') and text()='Login']");
+    private static final By DESKTOP_LIST = By.xpath("//*[contains(@class,'dropdown-toggle') and text()='Desktops']");
+    private static final By SHOWALLDESKTOPS_OPTION = By.xpath("//*[contains(@class,'see-all') and text()='Show All Desktops']");
+    private static final By CURRENCY_LIST = By.xpath("//*[contains(@class,'hidden-xs') and text()='Currency']");
+    private static final By EURO_OPTION = By.xpath("//*[contains(@class,'currency-select') and text()='€ Euro']");
+
 
     public HomePage makeSureYouAreInHomePage(){
         Assert.assertEquals("Locator of the header Your Store ","Your Store");
@@ -42,6 +47,13 @@ public class HomePage extends PageBase {
         clickButton(MY_ACCOUNT_BTN);
         clickButton(LOGOUT_BTN);
         return new HomePage(driver);
+    }
+
+    public void selectDesktopInEuro(){
+        clickButton(DESKTOP_LIST);
+        clickButton(SHOWALLDESKTOPS_OPTION);
+        clickButton(CURRENCY_LIST);
+        clickButton(EURO_OPTION);
     }
 
     public By getLogoutBtn(){

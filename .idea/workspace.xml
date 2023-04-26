@@ -5,11 +5,17 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="b94629c0-62e8-4f5d-aeb5-9f22589130d4" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_4_14_2023_4_43_PM_[Changes]/shelved.patch" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_4_14_2023_4_43_PM__Changes_.xml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/tests/ValidLoginTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/tests/ValidLoginTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/tests/ValidLoginTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/tests/ValidLoginTest.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/RegressionSuite.xml" beforeDir="false" afterPath="$PROJECT_DIR$/RegressionSuite.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/base/PageBase.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/base/PageBase.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/base/TestBase.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/base/TestBase.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/pages/HomePage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pages/HomePage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/pages/LoginPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pages/LoginPage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/pages/ValidationPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pages/ValidationPage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/tests/RegistrationWithErrorsTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/tests/RegistrationWithErrorsTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/resources/Properties/userLoginData.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/Properties/userLoginData.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/Properties/userLoginData.properties" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/Properties/userLoginData.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/tests/RegistrationWithErrorsTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/tests/RegistrationWithErrorsTest.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -58,7 +64,7 @@
       <recent name="pages" />
     </key>
   </component>
-  <component name="RunManager" selected="TestNG.ValidLoginTest">
+  <component name="RunManager" selected="TestNG.C:/Automation Projects/Open Cart 2023/OpenCart2023/RegressionSuite.xml">
     <configuration name="C:/Automation Projects/Open Cart 2023/OpenCart2023/RegressionSuite.xml" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="OpenCartLatest" />
       <option name="SUITE_NAME" value="$PROJECT_DIR$/RegressionSuite.xml" />
@@ -69,7 +75,24 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="RegistrationWithErrorsTest (1)" type="TestNG" temporary="true" nameIsGenerated="true">
+    <configuration name="ChangeCurrencyTest" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="OpenCartLatest" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="tests.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="tests" />
+      <option name="MAIN_CLASS_NAME" value="tests.ChangeCurrencyTest" />
+      <option name="TEST_OBJECT" value="CLASS" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="RegistrationWithErrorsTest" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="OpenCartLatest" />
       <extension name="coverage">
         <pattern>
@@ -86,16 +109,16 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="ValidLoginTest (1)" type="TestNG" temporary="true" nameIsGenerated="true">
+    <configuration name="TestBase (2)" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="OpenCartLatest" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="tests.*" />
+          <option name="PATTERN" value="base.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="tests" />
-      <option name="MAIN_CLASS_NAME" value="tests.ValidLoginTest" />
+      <option name="PACKAGE_NAME" value="base" />
+      <option name="MAIN_CLASS_NAME" value="base.TestBase" />
       <option name="TEST_OBJECT" value="CLASS" />
       <properties />
       <listeners />
@@ -103,35 +126,17 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="ValidLoginTest" type="TestNG" temporary="true" nameIsGenerated="true">
+    <configuration name="TestBase" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="OpenCartLatest" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="tests.*" />
+          <option name="PATTERN" value="base.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="tests" />
-      <option name="MAIN_CLASS_NAME" value="tests.ValidLoginTest" />
+      <option name="PACKAGE_NAME" value="base" />
+      <option name="MAIN_CLASS_NAME" value="base.TestBase" />
       <option name="TEST_OBJECT" value="CLASS" />
-      <properties />
-      <listeners />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="ValidLoginTest.clickOnLogin" type="TestNG" temporary="true" nameIsGenerated="true">
-      <module name="OpenCartLatest" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="tests.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="tests" />
-      <option name="MAIN_CLASS_NAME" value="tests.ValidLoginTest" />
-      <option name="METHOD_NAME" value="clickOnLogin" />
-      <option name="TEST_OBJECT" value="METHOD" />
       <properties />
       <listeners />
       <method v="2">
@@ -140,11 +145,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="TestNG.ValidLoginTest" />
-        <item itemvalue="TestNG.ValidLoginTest.clickOnLogin" />
         <item itemvalue="TestNG.C:/Automation Projects/Open Cart 2023/OpenCart2023/RegressionSuite.xml" />
-        <item itemvalue="TestNG.ValidLoginTest (1)" />
-        <item itemvalue="TestNG.RegistrationWithErrorsTest (1)" />
+        <item itemvalue="TestNG.ChangeCurrencyTest" />
+        <item itemvalue="TestNG.RegistrationWithErrorsTest" />
+        <item itemvalue="TestNG.TestBase" />
+        <item itemvalue="TestNG.TestBase (2)" />
       </list>
     </recent_temporary>
   </component>

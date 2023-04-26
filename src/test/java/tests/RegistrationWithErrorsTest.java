@@ -22,6 +22,7 @@ public class RegistrationWithErrorsTest extends TestBase {
     String email = fakeData.internet().emailAddress();
     String tel = LoadProperties.userData.getProperty("telephone");
     String invalidPassword = LoadProperties.userData.getProperty("inValidPassword");
+
     @BeforeMethod
     public void beforeTest() {
         homePageObj = new HomePage(driver);
@@ -30,6 +31,7 @@ public class RegistrationWithErrorsTest extends TestBase {
     }
     @Test(priority = 1)
     public void invalidRegWithFirstAndLastName () throws InterruptedException {
+
         homePageObj.clickOnRegisterBtn()
                 .InvalidRegistrationWithFirstNameLastName(fn, ln)
                 .clickOnContinue();
