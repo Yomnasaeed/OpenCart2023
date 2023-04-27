@@ -5,9 +5,14 @@
         <classes>
             <class name="tests.RegistrationWithoutErrorsTest" />
             <class name="tests.RegistrationWithErrorsTest" />
+            <class name="tests.InvalidLoginTest" />
             <class name="tests.ValidLoginTest" />
+<<<<<<< HEAD
             <class name="tests.InvalidLoginTest" />
 
+=======
+            <class name="tests.ChangeCurrencyTest" />
+>>>>>>> 1d6edbe8360dfdbf16d00fce4043b55399fe674d
         </classes>
     </test>
 </suite>
