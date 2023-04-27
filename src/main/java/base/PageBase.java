@@ -15,6 +15,7 @@ import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.FluentWait;
 import org.openqa.selenium.support.ui.WebDriverWait;
 import java.time.Duration;
+import java.util.List;
 
 public class PageBase {
     public WebDriver driver;
@@ -41,7 +42,6 @@ public class PageBase {
         driver.findElement(txtField).sendKeys(txtValue);
         System.out.println("Inserted [ " + txtValue + " ] successfully");
     }
-
 
     public boolean waitUntilElementIsClickable(By element) {
         return waitFor(ExpectedConditions.elementToBeClickable(element), Duration.ofSeconds(15));
