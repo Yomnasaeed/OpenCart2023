@@ -17,6 +17,8 @@ public class ValidationPage extends PageBase {
     private static final By MYACCOUNT_HEADER = By.id("content");
     private static final By INVALIDLOGIN_ERROR = By.className("alert-danger");
     private static final By EURO_SIGN = By.xpath("//div/button/strong");
+    public static final By TabletsInBreadCrumb = By.xpath("//a[text()='Tablets'][1]");
+    public static final By TabletsInLeftMenu = By.xpath("//a[text()='Tablets (1)']");
 
     public boolean getRegistrationSuccessMsg() {
         return elementVisible(REGISTRATION_SUCCESS_MSG);
@@ -45,6 +47,15 @@ public class ValidationPage extends PageBase {
     public String getInvalidLoginErrorMessageText (){
         return getElementText(INVALIDLOGIN_ERROR);
     }
+
+    public String getTabletsTextInBreadCrumb(){
+        return getElementText(TabletsInBreadCrumb);
+    }
+
+    public String getTabletsTextInLeftMenu(){
+        return getElementText(TabletsInLeftMenu);
+    }
+
 
 }
 

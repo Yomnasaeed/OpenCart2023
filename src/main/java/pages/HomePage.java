@@ -64,7 +64,6 @@ public class HomePage extends PageBase {
 
     public void openTabletsPage(){
         clickButton(TABLET_LIST);
-
     }
 
     public By getLogoutBtn(){
