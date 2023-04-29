@@ -7,9 +7,9 @@
             <class name="tests.RegistrationWithErrorsTest" />
             <class name="tests.InvalidLoginTest" />
             <class name="tests.ValidLoginTest" />
+            <class name="tests.InvalidLoginTest" />
             <class name="tests.ChangeCurrencyTest" />
             <class name="tests.CheckOnBreadcrumbTest" />
-
         </classes>
     </test>
 </suite>
