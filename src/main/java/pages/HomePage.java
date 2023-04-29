@@ -7,6 +7,8 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.testng.Assert;
 
+import java.util.List;
+
 public class HomePage extends PageBase {
     public HomePage(WebDriver driver) {
         super(driver);
@@ -20,6 +22,8 @@ public class HomePage extends PageBase {
     private static final By SHOWALLDESKTOPS_OPTION = By.xpath("//*[contains(@class,'see-all') and text()='Show All Desktops']");
     private static final By CURRENCY_LIST = By.xpath("//*[contains(@class,'hidden-xs') and text()='Currency']");
     private static final By EURO_OPTION = By.xpath("//*[contains(@class,'currency-select') and text()='€ Euro']");
+    private static final By TABLET_LIST = By.xpath("//*[contains(@href,'http://opencart.abstracta.us:80/index.php?route=product/category&path=57') and text()='Tablets'][1]");
+
 
 
     public HomePage makeSureYouAreInHomePage(){
@@ -49,11 +53,17 @@ public class HomePage extends PageBase {
         return new HomePage(driver);
     }
 
-    public void selectDesktopInEuro(){
+    public HomePage selectDesktopInEuro(){
         clickButton(DESKTOP_LIST);
         clickButton(SHOWALLDESKTOPS_OPTION);
         clickButton(CURRENCY_LIST);
         clickButton(EURO_OPTION);
+
+        return this;
+    }
+
+    public void openTabletsPage(){
+        clickButton(TABLET_LIST);
     }
 
     public By getLogoutBtn(){
