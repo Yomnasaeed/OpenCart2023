@@ -1,2 +1,4 @@
-Screenshots/
-allure-results/
+Screenshots
+allure-results
+.idea
+target
