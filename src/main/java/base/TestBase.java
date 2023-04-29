@@ -1,10 +1,8 @@
 package base;
 
 import io.github.bonigarcia.wdm.WebDriverManager;
-import org.testng.annotations.*;
 import pages.HomePage;
 import pages.LoginPage;
-import pages.ValidationPage;
 import utilities.LoadProperties;
 
 import org.apache.commons.io.FileUtils;
@@ -16,7 +14,9 @@ import org.openqa.selenium.chrome.ChromeOptions;
 import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.remote.CapabilityType;
 import org.testng.ITestResult;
-
+import org.testng.annotations.AfterClass;
+import org.testng.annotations.AfterMethod;
+import org.testng.annotations.BeforeClass;
 import java.io.File;
 import java.io.IOException;
 import java.util.HashMap;
@@ -43,62 +43,59 @@ public class TestBase {
 
     @BeforeClass
     public WebDriver startDriver() {
-
-
-        if(browserType.equalsIgnoreCase("chrome")){
+        if (browserType.equalsIgnoreCase("chrome")) {
             WebDriverManager.chromedriver().setup();
             driver = new ChromeDriver(chromeOption());
-        }else if(browserType.equalsIgnoreCase("firefox")){
+        } else if (browserType.equalsIgnoreCase("firefox")) {
             WebDriverManager.firefoxdriver().setup();
             driver = new FirefoxDriver();
         }
         driver.navigate().to(applicationURL);
 
-        System.out.println("Class name to start now: "+ this.getClass().getName());
-        if(this.getClass().getName().contains("TestBase")
-                ||this.getClass().getName().contains("RegistrationWithErrorsTest")
-                ||this.getClass().getName().contains("RegistrationWithoutErrorsTest")
-                ||this.getClass().getName().contains("ValidLoginTest")
-                ||this.getClass().getName().contains("InvalidLoginTest")){
+        System.out.println("Class name to start now: " + this.getClass().getName());
+        if (this.getClass().getName().contains("TestBase")
+                || this.getClass().getName().contains("RegistrationWithErrorsTest")
+                || this.getClass().getName().contains("RegistrationWithoutErrorsTest")
+                || this.getClass().getName().contains("ValidLoginTest")
+                || this.getClass().getName().contains("InvalidLoginTest")) {
             System.out.println("No login required");
-        }else{
+        } else {
             HomePage homePageObj = new HomePage(driver);
             LoginPage loginObj = new LoginPage(driver);
             homePageObj.clickOnMyAccountButton()
                     .clickOnLoginButton();
-            loginObj.validUserLogin(validEmail,validPassword);
-
+            loginObj.validUserLogin(validEmail, validPassword);
         }
         return driver;
     }
 
 
-        @AfterClass
-        public void closeDriver () {
-            if(this.getClass().getName().contains("TestBase")
-                    ||this.getClass().getName().contains("RegistrationWithErrorsTest")
-                    ||this.getClass().getName().contains("RegistrationWithoutErrorsTest")
-                    ||this.getClass().getName().contains("InvalidLoginTest")){
-                System.out.println("No logout");
-            }else{
-                HomePage homePageObj = new HomePage(driver);
-                homePageObj.userLogout();
-            }
-            driver.manage().deleteAllCookies();
-            driver.quit();
+    @AfterClass
+    public void closeDriver() {
+        if (this.getClass().getName().contains("TestBase")
+                || this.getClass().getName().contains("RegistrationWithErrorsTest")
+                || this.getClass().getName().contains("RegistrationWithoutErrorsTest")
+                || this.getClass().getName().contains("InvalidLoginTest")) {
+            System.out.println("No logout");
+        } else {
+            HomePage homePageObj = new HomePage(driver);
+            homePageObj.userLogout();
         }
+        driver.manage().deleteAllCookies();
+        driver.quit();
+    }
 
 
-        @AfterMethod
-        public void screenShotOnFailure (ITestResult result){
-            if (ITestResult.FAILURE == result.getStatus()) {
-                File screenshotFile = ((TakesScreenshot) driver).getScreenshotAs(OutputType.FILE);
-                String destination = System.getProperty("user.dir") + "./Screenshots/" + result.getName() + ".png";
-                try {
-                    FileUtils.copyFile(screenshotFile, new File(destination));
-                } catch (IOException e) {
-                    System.out.println("Cannot take screenshot: " + e);
-                }
+    @AfterMethod
+    public void screenShotOnFailure(ITestResult result) {
+        if (ITestResult.FAILURE == result.getStatus()) {
+            File screenshotFile = ((TakesScreenshot) driver).getScreenshotAs(OutputType.FILE);
+            String destination = System.getProperty("user.dir") + "./Screenshots/" + result.getName() + ".png";
+            try {
+                FileUtils.copyFile(screenshotFile, new File(destination));
+            } catch (IOException e) {
+                System.out.println("Cannot take screenshot: " + e);
             }
         }
     }
+}

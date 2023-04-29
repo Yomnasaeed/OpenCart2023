@@ -11,6 +11,8 @@ import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
 import com.github.javafaker.Faker;
 
+import static org.testng.Assert.assertTrue;
+
 public class RegistrationWithoutErrorsTest extends TestBase {
 
     private HomePage homeObject;
@@ -36,13 +38,13 @@ public class RegistrationWithoutErrorsTest extends TestBase {
         homeObject.clickOnRegisterBtn()
                 .validRegistration(fn, ln, email, tel, password);
 
-        Assert.assertTrue(validationPageObj.getRegistrationSuccessMsg(),"Registration message was not displayed");
+        assertTrue(validationPageObj.getRegistrationSuccessMsg(),"Registration message was not displayed");
     }
 
     @Test(dependsOnMethods = "RegistrationWithoutErrors")
     public void logout() {
         homeObject.clickOnMyAccountButton();
-        Assert.assertTrue(driver.findElement(homeObject.getLogoutBtn()).isDisplayed());
+        assertTrue(homeObject.getLogoutBtn(),"logout button wasn't displayed");
         registerObj.clickOnLogout();
     }
 }

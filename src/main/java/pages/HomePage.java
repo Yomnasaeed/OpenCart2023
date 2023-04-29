@@ -4,10 +4,7 @@ import base.PageBase;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.WebElement;
 import org.testng.Assert;
-
-import java.util.List;
 
 public class HomePage extends PageBase {
     public HomePage(WebDriver driver) {
@@ -66,8 +63,8 @@ public class HomePage extends PageBase {
         clickButton(TABLET_LIST);
     }
 
-    public By getLogoutBtn(){
-        return LOGOUT_BTN;
+    public boolean getLogoutBtn(){
+        return elementVisible(LOGOUT_BTN);
     }
 }
 

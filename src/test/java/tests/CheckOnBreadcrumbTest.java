@@ -1,11 +1,12 @@
 package tests;
 
 import base.TestBase;
+import pages.HomePage;
+import pages.ValidationPage;
+
 import org.testng.Assert;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
-import pages.HomePage;
-import pages.ValidationPage;
 
 public class CheckOnBreadcrumbTest extends TestBase {
 

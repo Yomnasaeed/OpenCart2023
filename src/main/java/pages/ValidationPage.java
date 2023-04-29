@@ -44,15 +44,15 @@ public class ValidationPage extends PageBase {
         return elementVisible(MYACCOUNT_HEADER);
     }
 
-    public String getInvalidLoginErrorMessageText (){
+    public String getInvalidLoginErrorMessageText() {
         return getElementText(INVALIDLOGIN_ERROR);
     }
 
-    public String getTabletsTextInBreadCrumb(){
+    public String getTabletsTextInBreadCrumb() {
         return getElementText(TabletsInBreadCrumb);
     }
 
-    public String getTabletsTextInLeftMenu(){
+    public String getTabletsTextInLeftMenu() {
         return getElementText(TabletsInLeftMenu);
     }
 

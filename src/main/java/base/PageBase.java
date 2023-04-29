@@ -1,21 +1,16 @@
 package base;
 
-import pages.HomePage;
-import pages.LoginPage;
 import utilities.LoadProperties;
 import utilities.Reporter;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.NoSuchElementException;
 import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.PageFactory;
 import org.openqa.selenium.support.ui.ExpectedCondition;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.FluentWait;
-import org.openqa.selenium.support.ui.WebDriverWait;
 import java.time.Duration;
-import java.util.List;
 
 public class PageBase {
     public WebDriver driver;
@@ -51,7 +46,7 @@ public class PageBase {
         return waitFor(ExpectedConditions.visibilityOfElementLocated(locator), Duration.ofSeconds(15));
     }
 
-    public String getElementText(By locator){
+    public String getElementText(By locator) {
         elementVisible(locator);
         return driver.findElement(locator).getText();
     }
@@ -72,7 +67,8 @@ public class PageBase {
 
     /**
      * Method to make the page holds till it loads
-     * @param driver	Select WebDriver driver
+     *
+     * @param driver  Select WebDriver driver
      * @param timeout select the time needed to make script waits
      */
     public void waitForPageLoad(WebDriver driver, int timeout) {
@@ -81,6 +77,7 @@ public class PageBase {
 
     /**
      * Method to simulate the Thread.sleep
+     *
      * @param milliSeconds insert the required time to make script sleeps
      */
     public void holdScript(Integer milliSeconds) {
