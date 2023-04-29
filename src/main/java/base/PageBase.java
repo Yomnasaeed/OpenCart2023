@@ -24,7 +24,7 @@ public class PageBase {
 
     public void clickButton(By button) {
         waitUntilElementIsClickable(button);
-        System.out.println("Clicked on button [ " + button + " ] successfully");
+        Reporter.Log("Clicked on button [ " + button + " ] successfully");
         holdScript(executionSpeed);
         driver.findElement(button).click();
     }
@@ -35,7 +35,7 @@ public class PageBase {
         driver.findElement(txtField).clear();
         holdScript(executionSpeed);
         driver.findElement(txtField).sendKeys(txtValue);
-        System.out.println("Inserted [ " + txtValue + " ] successfully");
+        Reporter.Log("Inserted [ " + txtValue + " ] successfully");
     }
 
     public boolean waitUntilElementIsClickable(By element) {
