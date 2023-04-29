@@ -10,6 +10,8 @@ public class LoadProperties {
             loadProperties(System.getProperty("user.dir") + "/src/test/resources/Properties/userLoginData.properties");
     public static Properties environmentData =
             loadProperties(System.getProperty("user.dir") + "/src/test/resources/Properties/EnvironmentsURL.properties");
+    public static Properties productsSearchData =
+            loadProperties(System.getProperty("user.dir") + "/src/test/resources/Properties/searchProducts.properties");
 
     /**
      * Load the properties file

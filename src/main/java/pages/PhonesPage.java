@@ -36,6 +36,7 @@ public class PhonesPage extends PageBase {
             ActualAlphabeticalOrder.add(phone.getText());
         }
         System.out.println("Actual listing after sorting in the website: "+ActualAlphabeticalOrder);
+
     }
 
 

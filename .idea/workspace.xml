@@ -5,22 +5,17 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="b94629c0-62e8-4f5d-aeb5-9f22589130d4" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/OpenCartLatest.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/RegressionSuite.xml" beforeDir="false" afterPath="$PROJECT_DIR$/RegressionSuite.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/base/TestBase.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/base/TestBase.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/pages/HomePage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pages/HomePage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/base/PageBase.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/base/PageBase.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/pages/PhonesPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pages/PhonesPage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/utilities/LoadProperties.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/utilities/LoadProperties.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/tests/SortByNameTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/tests/SortByNameTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/base/TestBase.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/base/TestBase.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/pages/HomePage.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/pages/HomePage.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/pages/LoginPage.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/pages/LoginPage.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/pages/MyAccountPage.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/pages/MyAccountPage.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/utilities/Helper.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/utilities/Helper.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/tests/ChangeCurrencyTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/tests/ChangeCurrencyTest.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/tests/CheckOnBreadcrumbTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/tests/CheckOnBreadcrumbTest.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/utilities/LoadProperties.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/utilities/LoadProperties.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/test-classes/tests/InvalidLoginTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/tests/InvalidLoginTest.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/tests/RegistrationWithoutErrorsTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/tests/RegistrationWithoutErrorsTest.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/test-classes/tests/ValidLoginTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/tests/ValidLoginTest.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -65,7 +60,7 @@
   </component>
   <component name="PropertiesComponent">
     <property name="last_opened_file_path" value="$PROJECT_DIR$/target/test-classes" />
-    <property name="project.structure.last.edited" value="Project" />
+    <property name="project.structure.last.edited" value="SDKs" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
     <property name="settings.editor.selected.configurable" value="reference.projectsettings.compiler.javacompiler" />
@@ -86,7 +81,7 @@
       <recent name="pages" />
     </key>
   </component>
-  <component name="RunManager" selected="TestNG.SortByNameTest">
+  <component name="RunManager" selected="TestNG.C:/Automation Projects/Open Cart 2023/OpenCart2023/RegressionSuite.xml">
     <configuration default="true" type="JetRunConfigurationType">
       <method v="2">
         <option name="Make" enabled="true" />
@@ -108,7 +103,7 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="CheckOnBreadcrumbTest (1)" type="TestNG" temporary="true" nameIsGenerated="true">
+    <configuration name="SearchByNameTest" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="OpenCartLatest" />
       <extension name="coverage">
         <pattern>
@@ -117,7 +112,7 @@
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="tests" />
-      <option name="MAIN_CLASS_NAME" value="tests.CheckOnBreadcrumbTest" />
+      <option name="MAIN_CLASS_NAME" value="tests.SearchByNameTest" />
       <option name="TEST_OBJECT" value="CLASS" />
       <properties />
       <listeners />
@@ -125,7 +120,7 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="CheckOnBreadcrumbTest" type="TestNG" temporary="true" nameIsGenerated="true">
+    <configuration name="SearchByNameTest.searchByNameForMac" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="OpenCartLatest" />
       <extension name="coverage">
         <pattern>
@@ -134,7 +129,25 @@
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="tests" />
-      <option name="MAIN_CLASS_NAME" value="tests.CheckOnBreadcrumbTest" />
+      <option name="MAIN_CLASS_NAME" value="tests.SearchByNameTest" />
+      <option name="METHOD_NAME" value="searchByNameForMac" />
+      <option name="TEST_OBJECT" value="METHOD" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="SortByNameTest (1)" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="OpenCartLatest" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="tests.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="tests" />
+      <option name="MAIN_CLASS_NAME" value="tests.SortByNameTest" />
       <option name="TEST_OBJECT" value="CLASS" />
       <properties />
       <listeners />
@@ -159,31 +172,13 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="SortByNameTest.sortByName" type="TestNG" temporary="true" nameIsGenerated="true">
-      <module name="OpenCartLatest" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="tests.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="tests" />
-      <option name="MAIN_CLASS_NAME" value="tests.SortByNameTest" />
-      <option name="METHOD_NAME" value="sortByName" />
-      <option name="TEST_OBJECT" value="METHOD" />
-      <properties />
-      <listeners />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="TestNG.SortByNameTest" />
-        <item itemvalue="TestNG.SortByNameTest.sortByName" />
         <item itemvalue="TestNG.C:/Automation Projects/Open Cart 2023/OpenCart2023/RegressionSuite.xml" />
-        <item itemvalue="TestNG.CheckOnBreadcrumbTest" />
-        <item itemvalue="TestNG.CheckOnBreadcrumbTest (1)" />
+        <item itemvalue="TestNG.SearchByNameTest" />
+        <item itemvalue="TestNG.SearchByNameTest.searchByNameForMac" />
+        <item itemvalue="TestNG.SortByNameTest" />
+        <item itemvalue="TestNG.SortByNameTest (1)" />
       </list>
     </recent_temporary>
   </component>
@@ -213,5 +208,15 @@
       </map>
     </option>
     <option name="oldMeFiltersMigrated" value="true" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <breakpoint enabled="true" type="java-exception">
+          <properties class="java.lang.ExceptionInInitializerError" package="java.lang" />
+          <option name="timeStamp" value="1" />
+        </breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>

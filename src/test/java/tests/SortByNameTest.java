@@ -9,8 +9,8 @@ import pages.PhonesPage;
 
 public class SortByNameTest extends TestBase {
 
-    HomePage homeObj;
-    PhonesPage phoneObj;
+    private HomePage homeObj;
+    private PhonesPage phoneObj;
 
     @BeforeMethod
     public void beforeMethod(){
