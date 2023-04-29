@@ -20,6 +20,7 @@ public class HomePage extends PageBase {
     private static final By CURRENCY_LIST = By.xpath("//*[contains(@class,'hidden-xs') and text()='Currency']");
     private static final By EURO_OPTION = By.xpath("//*[contains(@class,'currency-select') and text()='€ Euro']");
     private static final By TABLET_LIST = By.xpath("//*[contains(@href,'http://opencart.abstracta.us:80/index.php?route=product/category&path=57') and text()='Tablets'][1]");
+    private static final By PHONES_LIST = By.xpath("//*[contains(@href,'http://opencart.abstracta.us:80/index.php?route=product/category&path=24') and text()='Phones & PDAs']");
 
 
 
@@ -61,6 +62,11 @@ public class HomePage extends PageBase {
 
     public void openTabletsPage(){
         clickButton(TABLET_LIST);
+    }
+
+    public PhonesPage openPhonesPage(){
+        clickButton(PHONES_LIST);
+        return new PhonesPage(driver);
     }
 
     public boolean getLogoutBtn(){
