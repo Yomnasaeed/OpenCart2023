@@ -76,6 +76,7 @@ public class HomePage extends PageBase {
         return new PhonesPage(driver);
     }
 
+
     public ProductsSearchPage searchForMac(String productName){
         typeTextInField(SEARCH_BOX, productName);
         clickButton(SEARCH_BTN);
@@ -88,6 +89,11 @@ public class HomePage extends PageBase {
             MacListOfSearch.add(mac.getText());
         }
 
+        return new ProductsSearchPage(driver);
+    }
+
+    public ProductsSearchPage clickOnSearch(){
+        clickButton(SEARCH_BTN);
         return new ProductsSearchPage(driver);
     }
 
