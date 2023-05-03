@@ -5,11 +5,13 @@
         <classes>
             <class name="tests.RegistrationWithoutErrorsTest" />
             <class name="tests.RegistrationWithErrorsTest" />
-            <class name="tests.InvalidLoginTest" />
             <class name="tests.ValidLoginTest" />
             <class name="tests.InvalidLoginTest" />
             <class name="tests.ChangeCurrencyTest" />
             <class name="tests.CheckOnBreadcrumbTest" />
+            <class name="tests.SortByNameTest" />
+            <class name="tests.SearchByNameTest" />
+
         </classes>
     </test>
 </suite>

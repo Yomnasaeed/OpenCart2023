@@ -4,7 +4,11 @@ import base.PageBase;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
 import org.testng.Assert;
+
+import java.util.ArrayList;
+import java.util.List;
 
 public class HomePage extends PageBase {
     public HomePage(WebDriver driver) {
@@ -21,6 +25,9 @@ public class HomePage extends PageBase {
     private static final By EURO_OPTION = By.xpath("//*[contains(@class,'currency-select') and text()='€ Euro']");
     private static final By TABLET_LIST = By.xpath("//*[contains(@href,'http://opencart.abstracta.us:80/index.php?route=product/category&path=57') and text()='Tablets'][1]");
     private static final By PHONES_LIST = By.xpath("//*[contains(@href,'http://opencart.abstracta.us:80/index.php?route=product/category&path=24') and text()='Phones & PDAs']");
+    private static final By SEARCH_BOX = By.className("form-control");
+    private static final By SEARCH_BTN = By.className("btn-default");
+    public List<String> MacListOfSearch;
 
 
 
@@ -34,9 +41,9 @@ public class HomePage extends PageBase {
         return this;
     }
 
-    public HomePage clickOnLoginButton(){
+    public LoginPage clickOnLoginButton(){
         clickButton(LOGIN_BTN);
-        return this;
+        return new LoginPage(driver);
     }
 
     public RegistrationPage clickOnRegisterBtn() {
@@ -48,7 +55,7 @@ public class HomePage extends PageBase {
     public HomePage userLogout() {
         clickButton(MY_ACCOUNT_BTN);
         clickButton(LOGOUT_BTN);
-        return new HomePage(driver);
+        return this;
     }
 
     public HomePage selectDesktopInEuro(){
@@ -67,6 +74,21 @@ public class HomePage extends PageBase {
     public PhonesPage openPhonesPage(){
         clickButton(PHONES_LIST);
         return new PhonesPage(driver);
+    }
+
+    public ProductsSearchPage searchForMac(String productName){
+        typeTextInField(SEARCH_BOX, productName);
+        clickButton(SEARCH_BTN);
+
+        List<WebElement> macList = driver.findElements(By.tagName("h4"));
+
+        MacListOfSearch  = new ArrayList<>();
+
+        for (WebElement mac : macList) {
+            MacListOfSearch.add(mac.getText());
+        }
+
+        return new ProductsSearchPage(driver);
     }
 
     public boolean getLogoutBtn(){

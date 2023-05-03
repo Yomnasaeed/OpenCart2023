@@ -37,6 +37,7 @@ public class PhonesPage extends PageBase {
         for (WebElement phone : orderedPhones) {
             ActualAlphabeticalOrder.add(phone.getText());
         }
+
         Reporter.Log("Actual listing after sorting in the website: "+ActualAlphabeticalOrder);
     }
 

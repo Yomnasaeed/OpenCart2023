@@ -1,6 +1,7 @@
 package base;
 
 import io.github.bonigarcia.wdm.WebDriverManager;
+import org.testng.annotations.Test;
 import pages.HomePage;
 import pages.LoginPage;
 import utilities.LoadProperties;
@@ -60,11 +61,11 @@ public class TestBase {
                 || this.getClass().getName().contains("InvalidLoginTest")) {
             System.out.println("No login required");
         } else {
-            HomePage homePageObj = new HomePage(driver);
-            LoginPage loginObj = new LoginPage(driver);
-            homePageObj.clickOnMyAccountButton()
-                    .clickOnLoginButton();
-            loginObj.validUserLogin(validEmail, validPassword);
+                HomePage homePageObj = new HomePage(driver);
+                LoginPage loginObj = new LoginPage(driver);
+                homePageObj.clickOnMyAccountButton()
+                        .clickOnLoginButton();
+                loginObj.validUserLogin(validEmail, validPassword);
         }
         return driver;
     }
