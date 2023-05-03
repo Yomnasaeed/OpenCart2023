@@ -11,7 +11,7 @@
             <class name="tests.CheckOnBreadcrumbTest" />
             <class name="tests.SortByNameTest" />
             <class name="tests.SearchByNameTest" />
-
+            <class name="tests.SearchInSubcategoriesTest" />
         </classes>
     </test>
 </suite>

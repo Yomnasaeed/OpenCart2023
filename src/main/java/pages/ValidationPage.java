@@ -19,6 +19,8 @@ public class ValidationPage extends PageBase {
     private static final By EURO_SIGN = By.xpath("//div/button/strong");
     public static final By TabletsInBreadCrumb = By.xpath("//a[text()='Tablets'][1]");
     public static final By TabletsInLeftMenu = By.xpath("//a[text()='Tablets (1)']");
+    private static final By AppleCinemaProduct =By.xpath("//a[text()='Apple Cinema 30\"']");
+
 
     public boolean getRegistrationSuccessMsg() {
         return elementVisible(REGISTRATION_SUCCESS_MSG);
@@ -54,6 +56,11 @@ public class ValidationPage extends PageBase {
 
     public String getTabletsTextInLeftMenu() {
         return getElementText(TabletsInLeftMenu);
+    }
+
+    public boolean isAppleCinemaDisplayed(){
+
+        return elementVisible(AppleCinemaProduct);
     }
 
 

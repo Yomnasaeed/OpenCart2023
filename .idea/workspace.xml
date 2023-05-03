@@ -5,10 +5,12 @@
   </component>
   <component name="ChangeListManager">
 
+
     <list default="true" id="b94629c0-62e8-4f5d-aeb5-9f22589130d4" name="Changes" comment="" />
 
 <option name="SHOW_DIALOG" value="false" />
-    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+
+<option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
@@ -70,7 +72,7 @@
       <recent name="pages" />
     </key>
   </component>
-  <component name="RunManager" selected="TestNG.C:/Automation Projects/Open Cart 2023/OpenCart2023/RegressionSuite.xml">
+  <component name="RunManager" selected="TestNG.SearchInSubcategoriesTest.searchInSubCategories">
     <configuration default="true" type="JetRunConfigurationType">
       <method v="2">
         <option name="Make" enabled="true" />
@@ -127,7 +129,7 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="SortByNameTest (1)" type="TestNG" temporary="true" nameIsGenerated="true">
+    <configuration name="SearchInSubcategoriesTest" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="OpenCartLatest" />
       <extension name="coverage">
         <pattern>
@@ -136,7 +138,7 @@
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="tests" />
-      <option name="MAIN_CLASS_NAME" value="tests.SortByNameTest" />
+      <option name="MAIN_CLASS_NAME" value="tests.SearchInSubcategoriesTest" />
       <option name="TEST_OBJECT" value="CLASS" />
       <properties />
       <listeners />
@@ -144,7 +146,7 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="SortByNameTest" type="TestNG" temporary="true" nameIsGenerated="true">
+    <configuration name="SearchInSubcategoriesTest.searchInSubCategories" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="OpenCartLatest" />
       <extension name="coverage">
         <pattern>
@@ -153,8 +155,9 @@
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="tests" />
-      <option name="MAIN_CLASS_NAME" value="tests.SortByNameTest" />
-      <option name="TEST_OBJECT" value="CLASS" />
+      <option name="MAIN_CLASS_NAME" value="tests.SearchInSubcategoriesTest" />
+      <option name="METHOD_NAME" value="searchInSubCategories" />
+      <option name="TEST_OBJECT" value="METHOD" />
       <properties />
       <listeners />
       <method v="2">
@@ -163,11 +166,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="TestNG.SearchInSubcategoriesTest.searchInSubCategories" />
+        <item itemvalue="TestNG.SearchInSubcategoriesTest" />
         <item itemvalue="TestNG.C:/Automation Projects/Open Cart 2023/OpenCart2023/RegressionSuite.xml" />
         <item itemvalue="TestNG.SearchByNameTest" />
         <item itemvalue="TestNG.SearchByNameTest.searchByNameForMac" />
-        <item itemvalue="TestNG.SortByNameTest" />
-        <item itemvalue="TestNG.SortByNameTest (1)" />
       </list>
     </recent_temporary>
   </component>
