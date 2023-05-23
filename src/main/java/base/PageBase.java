@@ -66,6 +66,8 @@ public class PageBase {
         }
     }
 
+
+
     /**
      * Method to make the page holds till it loads
      *
