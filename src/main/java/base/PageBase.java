@@ -62,7 +62,7 @@ public class PageBase {
             fluentWait.until(expectedCondition);
             return true;
         } catch (Exception e) {
-            return true;
+            return false;
         }
     }
 
