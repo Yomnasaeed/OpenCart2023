@@ -4,13 +4,17 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-
-
-    <list default="true" id="b94629c0-62e8-4f5d-aeb5-9f22589130d4" name="Changes" comment="" />
-
-<option name="SHOW_DIALOG" value="false" />
-
-<option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <list default="true" id="b94629c0-62e8-4f5d-aeb5-9f22589130d4" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/pages/HomePage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pages/HomePage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/pages/ProductsSearchPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pages/ProductsSearchPage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/pages/ValidationPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pages/ValidationPage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/tests/SearchByNameTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/tests/SearchByNameTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/pages/HomePage.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/pages/HomePage.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/pages/ValidationPage.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/pages/ValidationPage.class" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
@@ -72,7 +76,7 @@
       <recent name="pages" />
     </key>
   </component>
-  <component name="RunManager" selected="TestNG.SearchInSubcategoriesTest.searchInSubCategories">
+  <component name="RunManager" selected="TestNG.AddItemsToCartTest (1)">
     <configuration default="true" type="JetRunConfigurationType">
       <method v="2">
         <option name="Make" enabled="true" />
@@ -84,17 +88,7 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="C:/Automation Projects/Open Cart 2023/OpenCart2023/RegressionSuite.xml" type="TestNG" temporary="true" nameIsGenerated="true">
-      <module name="OpenCartLatest" />
-      <option name="SUITE_NAME" value="$PROJECT_DIR$/RegressionSuite.xml" />
-      <option name="TEST_OBJECT" value="SUITE" />
-      <properties />
-      <listeners />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="SearchByNameTest" type="TestNG" temporary="true" nameIsGenerated="true">
+    <configuration name="AddItemsToCartTest (1)" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="OpenCartLatest" />
       <extension name="coverage">
         <pattern>
@@ -103,7 +97,7 @@
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="tests" />
-      <option name="MAIN_CLASS_NAME" value="tests.SearchByNameTest" />
+      <option name="MAIN_CLASS_NAME" value="tests.AddItemsToCartTest" />
       <option name="TEST_OBJECT" value="CLASS" />
       <properties />
       <listeners />
@@ -111,7 +105,7 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="SearchByNameTest.searchByNameForMac" type="TestNG" temporary="true" nameIsGenerated="true">
+    <configuration name="AddItemsToCartTest" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="OpenCartLatest" />
       <extension name="coverage">
         <pattern>
@@ -120,8 +114,25 @@
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="tests" />
-      <option name="MAIN_CLASS_NAME" value="tests.SearchByNameTest" />
-      <option name="METHOD_NAME" value="searchByNameForMac" />
+      <option name="MAIN_CLASS_NAME" value="tests.AddItemsToCartTest" />
+      <option name="TEST_OBJECT" value="CLASS" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="AddItemsToCartTest.addItemsToCart" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="OpenCartLatest" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="tests.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="tests" />
+      <option name="MAIN_CLASS_NAME" value="tests.AddItemsToCartTest" />
+      <option name="METHOD_NAME" value="addItemsToCart" />
       <option name="TEST_OBJECT" value="METHOD" />
       <properties />
       <listeners />
@@ -166,11 +177,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="TestNG.AddItemsToCartTest (1)" />
+        <item itemvalue="TestNG.AddItemsToCartTest" />
+        <item itemvalue="TestNG.AddItemsToCartTest.addItemsToCart" />
         <item itemvalue="TestNG.SearchInSubcategoriesTest.searchInSubCategories" />
         <item itemvalue="TestNG.SearchInSubcategoriesTest" />
-        <item itemvalue="TestNG.C:/Automation Projects/Open Cart 2023/OpenCart2023/RegressionSuite.xml" />
-        <item itemvalue="TestNG.SearchByNameTest" />
-        <item itemvalue="TestNG.SearchByNameTest.searchByNameForMac" />
       </list>
     </recent_temporary>
   </component>

@@ -1,5 +1,7 @@
 package base;
 
+import com.google.common.base.Verify;
+import org.testng.Assert;
 import utilities.LoadProperties;
 import utilities.Reporter;
 
@@ -50,7 +52,6 @@ public class PageBase {
         elementVisible(locator);
         return driver.findElement(locator).getText();
     }
-
 
     public boolean waitFor(ExpectedCondition<?> expectedCondition, Duration duration) {
         try {

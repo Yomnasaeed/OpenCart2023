@@ -20,6 +20,7 @@ public class ValidationPage extends PageBase {
     public static final By TabletsInBreadCrumb = By.xpath("//a[text()='Tablets'][1]");
     public static final By TabletsInLeftMenu = By.xpath("//a[text()='Tablets (1)']");
     private static final By AppleCinemaProduct =By.xpath("//a[text()='Apple Cinema 30\"']");
+    private static final By itemAddedSuccessMsg = By.className("alert");
 
 
     public boolean getRegistrationSuccessMsg() {
@@ -61,6 +62,9 @@ public class ValidationPage extends PageBase {
     public boolean isAppleCinemaDisplayed(){
 
         return elementVisible(AppleCinemaProduct);
+    }
+    public String getAddedToCartSuccessMsgText(){
+        return  getElementText(itemAddedSuccessMsg);
     }
 
 

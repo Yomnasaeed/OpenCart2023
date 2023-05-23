@@ -27,6 +27,8 @@ public class HomePage extends PageBase {
     private static final By PHONES_LIST = By.xpath("//*[contains(@href,'http://opencart.abstracta.us:80/index.php?route=product/category&path=24') and text()='Phones & PDAs']");
     private static final By SEARCH_BOX = By.className("form-control");
     private static final By SEARCH_BTN = By.className("btn-default");
+    private static final By shoppingCartBtn = By.cssSelector("button.btn.btn-inverse.btn-block.btn-lg.dropdown-toggle");
+    private static final By viewCart = By.xpath("//*[contains(text(),'View Cart')]");
     public List<String> MacListOfSearch;
 
 
@@ -95,6 +97,12 @@ public class HomePage extends PageBase {
     public ProductsSearchPage clickOnSearch(){
         clickButton(SEARCH_BTN);
         return new ProductsSearchPage(driver);
+    }
+
+    public ShoppingCartPage openShoppingCart(){
+        clickButton(shoppingCartBtn);
+        clickButton(viewCart);
+        return new ShoppingCartPage(driver);
     }
 
     public boolean getLogoutBtn(){

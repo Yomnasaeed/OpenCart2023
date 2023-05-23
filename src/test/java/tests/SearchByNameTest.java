@@ -22,6 +22,6 @@ public class SearchByNameTest extends TestBase {
     @Test
     public void searchByNameForMac(){
         homeObj.searchForMac(macProduct);
-        Assert.assertTrue(homeObj.MacListOfSearch.contains("MacBook"));
+        Assert.assertTrue(homeObj.MacListOfSearch.contains("MacBook"), "Cannot find Macbook");
     }
 }
