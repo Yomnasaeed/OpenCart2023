@@ -20,6 +20,9 @@ public class ValidationPage extends PageBase {
     public static final By TabletsInBreadCrumb = By.xpath("//a[text()='Tablets'][1]");
     public static final By TabletsInLeftMenu = By.xpath("//a[text()='Tablets (1)']");
     private static final By AppleCinemaProduct =By.xpath("//a[text()='Apple Cinema 30\"']");
+    private static final By itemAddedSuccessMsg = By.className("alert");
+    private static final By HpLaptopDeliveryDate = By.xpath("//table[@class='table table-bordered'][1]/tbody/tr[1]/td[2]/small");
+    private static final By totalPrice = By.xpath("//div[@class='col-sm-4 col-sm-offset-8']/table/tbody/tr[1]/td[2]");
 
 
     public boolean getRegistrationSuccessMsg() {
@@ -54,15 +57,15 @@ public class ValidationPage extends PageBase {
         return getElementText(TabletsInBreadCrumb);
     }
 
-    public String getTabletsTextInLeftMenu() {
-        return getElementText(TabletsInLeftMenu);
-    }
+    public String getTabletsTextInLeftMenu() {return getElementText(TabletsInLeftMenu);}
 
-    public boolean isAppleCinemaDisplayed(){
+    public boolean isAppleCinemaDisplayed(){return elementVisible(AppleCinemaProduct);}
 
-        return elementVisible(AppleCinemaProduct);
-    }
+    public String getAddedToCartSuccessMsgText(){return  getElementText(itemAddedSuccessMsg);}
 
+    public String getHpDeliveryDate(){ return getElementText(HpLaptopDeliveryDate);}
+
+    public String getTotalPrice(){return getElementText(totalPrice);}
 
 }
 

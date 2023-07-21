@@ -12,6 +12,8 @@ public class LoadProperties {
             loadProperties(System.getProperty("user.dir") + "/src/test/resources/Properties/EnvironmentsURL.properties");
     public static Properties productsSearchData =
             loadProperties(System.getProperty("user.dir") + "/src/test/resources/Properties/searchProducts.properties");
+    public static Properties productDetailsInShoppingCart =
+            loadProperties(System.getProperty("user.dir") + "/src/test/resources/Properties/productDetailsInShoppingCart.properties");
 
     /**
      * Load the properties file

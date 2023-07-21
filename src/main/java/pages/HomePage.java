@@ -15,7 +15,7 @@ public class HomePage extends PageBase {
         super(driver);
     }
 
-   private static final By MY_ACCOUNT_BTN = By.xpath("//span[@class='hidden-xs hidden-sm hidden-md' and contains(text(),'My Account')]");
+    private static final By MY_ACCOUNT_BTN = By.xpath("//span[@class='hidden-xs hidden-sm hidden-md' and contains(text(),'My Account')]");
     private static final By REGISTER_BTN = By.xpath("//*[contains(@href,'register')]");
     private static final By LOGOUT_BTN = By.xpath("//li/a[text()='Logout']");
     private static final By LOGIN_BTN = By.xpath("//*[contains(@href,'login') and text()='Login']");
@@ -27,6 +27,11 @@ public class HomePage extends PageBase {
     private static final By PHONES_LIST = By.xpath("//*[contains(@href,'http://opencart.abstracta.us:80/index.php?route=product/category&path=24') and text()='Phones & PDAs']");
     private static final By SEARCH_BOX = By.className("form-control");
     private static final By SEARCH_BTN = By.className("btn-default");
+    private static final By shoppingCartBtn = By.xpath("//*[contains(@class,'btn btn-inverse btn-block btn-lg dropdown-toggle')]");
+    private static final By viewCart = By.xpath("//*[contains(text(),'View Cart')]");
+    private static final By laptopList = By.xpath("//*[contains(text(),'Laptops & Notebooks')][1]");
+    private static final By showAllLaptopsOption = By.xpath("//*[contains(text(),'Show All Laptops & Notebooks')]");
+    private static final By removeProductBtn = By.xpath("//button[@title='Remove']");
     public List<String> MacListOfSearch;
 
 
@@ -67,8 +72,9 @@ public class HomePage extends PageBase {
         return this;
     }
 
-    public void openTabletsPage(){
+    public TabletsPage openTabletsPage(){
         clickButton(TABLET_LIST);
+        return new TabletsPage(driver);
     }
 
     public PhonesPage openPhonesPage(){
@@ -78,6 +84,7 @@ public class HomePage extends PageBase {
 
 
     public ProductsSearchPage searchForMac(String productName){
+        driver.findElements(removeProductBtn);
         typeTextInField(SEARCH_BOX, productName);
         clickButton(SEARCH_BTN);
 
@@ -88,7 +95,6 @@ public class HomePage extends PageBase {
         for (WebElement mac : macList) {
             MacListOfSearch.add(mac.getText());
         }
-
         return new ProductsSearchPage(driver);
     }
 
@@ -97,8 +103,38 @@ public class HomePage extends PageBase {
         return new ProductsSearchPage(driver);
     }
 
+    public HomePage openShoppingList() {
+        clickButton(shoppingCartBtn);
+        return this;
+    }
+
+    public ShoppingCartPage clickViewCart() {
+        clickButton(viewCart);
+        return new ShoppingCartPage(driver);
+    }
+
+    /*This method to remove any products in the cart before starting any test*/
+    public HomePage removeProductsInCart(){
+        List<WebElement> removeBtns = driver.findElements(removeProductBtn);
+        Boolean removeBtnExists = removeBtns.size()>0;
+
+        if(removeBtnExists = true){
+            for (int i=0; i<removeBtns.size(); i++){
+                clickButton(removeProductBtn);
+                clickButton(shoppingCartBtn);
+            }
+        }
+        return this;
+    }
+
     public boolean getLogoutBtn(){
         return elementVisible(LOGOUT_BTN);
+    }
+
+    public LaptopsPage openLaptopsPage(){
+        clickButton(laptopList);
+        clickButton(showAllLaptopsOption);
+        return new LaptopsPage(driver);
     }
 }
 

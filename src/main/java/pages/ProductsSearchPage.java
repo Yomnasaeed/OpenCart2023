@@ -12,7 +12,6 @@ public class ProductsSearchPage extends PageBase {
     }
 
     private static final By searchBox =By.id("input-search");
-//    private static final By categoriesDropDown =By.xpath("//select[@name='category_id' and @class='form-control']");
     private static final By subcategoriesCheckBox =By.xpath("//input[@name='sub_category' and @type='checkbox']");
     private static final By searchBtn =By.id("button-search");
 
