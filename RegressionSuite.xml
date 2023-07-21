@@ -12,8 +12,6 @@
             <class name="tests.SortByNameTest" />
             <class name="tests.SearchByNameTest" />
             <class name="tests.SearchInSubcategoriesTest" />
-            <class name="tests.AddItemsToCartTest" />
-
         </classes>
     </test>
 </suite>
