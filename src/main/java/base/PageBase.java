@@ -1,5 +1,9 @@
 package base;
 
+import com.google.common.base.Verify;
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.support.ui.WebDriverWait;
+import org.testng.Assert;
 import utilities.LoadProperties;
 import utilities.Reporter;
 
@@ -10,7 +14,10 @@ import org.openqa.selenium.support.PageFactory;
 import org.openqa.selenium.support.ui.ExpectedCondition;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.FluentWait;
+
+import javax.lang.model.util.Elements;
 import java.time.Duration;
+import java.util.List;
 
 public class PageBase {
     public WebDriver driver;
@@ -24,10 +31,12 @@ public class PageBase {
 
     public void clickButton(By button) {
         waitUntilElementIsClickable(button);
-        Reporter.Log("Clicked on button [ " + button + " ] successfully");
+        String buttonName = driver.findElement(button).getText();
+        Reporter.Log("Clicked on button [ " + buttonName + " ] "+"["+button+"]"+" successfully");
         holdScript(executionSpeed);
         driver.findElement(button).click();
     }
+
 
     public void typeTextInField(By txtField, String txtValue) {
         elementVisible(txtField);
@@ -51,7 +60,6 @@ public class PageBase {
         return driver.findElement(locator).getText();
     }
 
-
     public boolean waitFor(ExpectedCondition<?> expectedCondition, Duration duration) {
         try {
             FluentWait<WebDriver> fluentWait = new FluentWait<>(driver)
@@ -64,6 +72,8 @@ public class PageBase {
             return false;
         }
     }
+
+
 
     /**
      * Method to make the page holds till it loads
